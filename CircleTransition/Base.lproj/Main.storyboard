@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C10-Yb-hev">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CircleTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu1-6m-WSN">
+                                <rect key="frame" x="546" y="30" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="SiW-wJ-bET"/>
+                                    <constraint firstAttribute="height" constant="44" id="yXd-RO-8pi"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="circelTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UbX-ik-SL4"/>
+                                    <segue destination="DVK-qI-nNH" kind="show" identifier="PushSegue" id="3rL-y0-SeO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8oQ-vl-F1p">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Bcd-JR-Yxd"/>
+                                    <constraint firstAttribute="width" constant="300" id="YnY-JI-LEl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54097885280000002" green="1" blue="0.46140594810000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Yu1-6m-WSN" secondAttribute="trailing" constant="10" id="SOR-Ty-ni9"/>
+                            <constraint firstAttribute="centerY" secondItem="8oQ-vl-F1p" secondAttribute="centerY" id="lEg-O0-i0s"/>
+                            <constraint firstItem="Yu1-6m-WSN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="sr1-rl-6wy"/>
+                            <constraint firstAttribute="centerX" secondItem="8oQ-vl-F1p" secondAttribute="centerX" id="y8h-gd-mQ7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4QO-Tl-5h4"/>
+                    <connections>
+                        <outlet property="button" destination="Yu1-6m-WSN" id="Vz9-We-fHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="393"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yvx-2U-pH7">
+            <objects>
+                <viewController id="DVK-qI-nNH" customClass="ViewController" customModule="CircleTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vaZ-OS-c09"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Ba-bD-umE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mKe-Q2-jHP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m48-Za-naR">
+                                <rect key="frame" x="546" y="30" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="gaX-Oy-mEv"/>
+                                    <constraint firstAttribute="height" constant="44" id="oLN-1a-AJi"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="circelTapped:" destination="DVK-qI-nNH" eventType="touchUpInside" id="gnF-0Y-XPY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Md5-2Z-DKM">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="DMn-Rb-HXL"/>
+                                    <constraint firstAttribute="width" constant="300" id="MLO-wB-YCD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Md5-2Z-DKM" secondAttribute="centerX" id="IQF-7E-JoL"/>
+                            <constraint firstItem="m48-Za-naR" firstAttribute="top" secondItem="vaZ-OS-c09" secondAttribute="bottom" constant="10" id="Y3K-Q0-xgF"/>
+                            <constraint firstAttribute="trailing" secondItem="m48-Za-naR" secondAttribute="trailing" constant="10" id="md0-9b-mfg"/>
+                            <constraint firstAttribute="centerY" secondItem="Md5-2Z-DKM" secondAttribute="centerY" id="ycX-nH-oDP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="m48-Za-naR" id="mQA-eB-SEr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hp8-0E-Ztm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1898" y="393"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3c7-dM-4Nx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="C10-Yb-hev" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="der-7o-AOS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="delegate" destination="iIr-XX-5Sn" id="qFl-jv-krn"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="xBS-7W-9V6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJ9-OL-1Oy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="iIr-XX-5Sn" customClass="NavigationControllerDelegate" customModule="CircleTransition" customModuleProvider="target">
+                    <connections>
+                        <outlet property="navigationController" destination="C10-Yb-hev" id="MzN-1w-S6x"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="340" y="1054"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ipad.jpg" width="984" height="562"/>
+        <image name="iphone.jpg" width="1200" height="1200"/>
+    </resources>
+</document>
